@@ -1,0 +1,75 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.tHalf {
+  flex: 1;
+  width: 100%;
+  background-image: url(../img/rx7.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.bHalf {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+.sec {
+  flex: 1;
+  width: 50px;
+}
+#one {
+/*  background: red;
+*/}
+#two {
+  background: green;
+}
+#three {
+  background: yellow;
+}
+.flipWrap {
+  perspective: 1000px;
+  height: 100%;
+}
+.flipWrap:hover .flip {
+  transform: rotateY(180deg);
+}
+.flipWrap, .front, .back {
+width: 100%;
+height: 100vh;
+}
+.flip {
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  transform: rotateY(0deg);
+  background: orange;
+}
+.back {
+  transform: rotateY(180deg);
+  background: blue;
+}
+h1, h2, p {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+}
